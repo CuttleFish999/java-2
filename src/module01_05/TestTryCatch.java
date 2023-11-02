@@ -13,9 +13,10 @@ public class TestTryCatch {
 			} catch (Exception e) {
 				System.out.println("2-發生Exception");
 			}
+			
 			i++;
 		}
-
+ 
 	}
 
 }

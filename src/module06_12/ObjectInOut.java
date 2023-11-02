@@ -34,13 +34,14 @@ public class ObjectInOut {
 		Book[] books = new Book[2];
 		books[0] = new Book("Java程式設計", 580.0, "張搧風");
 		books[1] = new Book("JSP程式設計", 650.0, "黃會紅");
+		//輸出
 		FileOutputStream fos = new FileOutputStream(file);
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		for (int i = 0; i < books.length; i++)
 			oos.writeObject(books[i]);
 		oos.close();
 		fos.close();
-		
+		//輸入
 		FileInputStream fis = new FileInputStream(file);
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		System.out.println(file.getName() + "檔案內容如下: ");

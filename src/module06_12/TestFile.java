@@ -1,6 +1,7 @@
 package module06_12;
 
 import java.io.File;
+import java.sql.Date;
 
 public class TestFile {
 	static void p(String s) {
@@ -9,7 +10,7 @@ public class TestFile {
 
 	public static void main(String args[]) {
 
-		File f1 = new File("c:\\javawork"); // 目錄物件
+		File f1 = new File("c:\\javawork\\作業執行結果.pdf"); // 目錄物件
 		p("File Name: " + f1.getName());
 		p("Path: " + f1.getPath());
 		p("Abs Path: " + f1.getAbsolutePath());
@@ -21,6 +22,7 @@ public class TestFile {
 		p(f1.isFile() ? "is a file" : "is not a file");
 		p(f1.isAbsolute() ? "is absolute" : "is not absolute");
 		p("File last modified: " + f1.lastModified());
+		System.out.println(new Date(f1.lastModified()));
 		p("File size: " + f1.length() + " Bytes");
 		
 	}

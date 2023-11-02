@@ -16,7 +16,8 @@ public class TestThrowDemo {
 		} catch (ArithmeticException e) {
 //			System.out.println(e.getMessage());
 			// 或
-			e.printStackTrace();
+//			e.printStackTrace();
+			System.out.print(e);
 		}
 	}
 
